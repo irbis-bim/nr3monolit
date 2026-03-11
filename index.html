@@ -110,7 +110,8 @@
       <section class="panel">
         <h2>3D модель проекта</h2>
         <div class="buttons">
-          <button class="project-btn active" onclick="selectProject('Пример проекта')">НР3 Монолит</button>
+          <button class="project-btn active" onclick="selectProject('Пример проекта')">НР3 Монолит накопительная модель</button>
+          <button class="project-btn active" onclick="selectProject('Пример проекта')">НР3 Монолит план-фактовая модель</button>
         </div>
         <div class="iframe-wrap">
           <iframe
@@ -125,6 +126,7 @@
   <script>
     const modelMapping = {
       'Пример проекта': '019cdbb8-81b0-7b22-8bd3-b6d90212d182?version=1',
+      'Пример проекта': '019cdbb8-85db-79b0-8ea2-964feaeab747?version=1',
     function selectProject(projectCode) {
       document.querySelectorAll('.project-btn').forEach(btn => btn.classList.remove('active'));
       event.target.classList.add('active');
